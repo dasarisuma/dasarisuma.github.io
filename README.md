@@ -9,3 +9,4 @@
 \\\python
 def add(x,y):
     return x+y
+<img src="avengers.jpg"> </img>
