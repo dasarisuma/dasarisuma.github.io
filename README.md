@@ -6,7 +6,7 @@
 
 [click for my github page](https://dasarisuma.github.io/)
 
-\\\python
+\\\ python
 def add(x,y):
     return x+y
-<img src="avengers.jpg"> </img>
+<img src="avengers.jpg">
