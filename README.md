@@ -1,8 +1,8 @@
 # dasarisuma.github.io
 ## Personal Homepage
 ### HI
--list1
--list2
+- list1
+- list2
 
 [click for my github page](https://dasarisuma.github.io/)
 
