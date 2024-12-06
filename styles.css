@@ -1,86 +1,65 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Light background for better contrast */
-    display: flex;
+    background-color: #f4f4f4;
 }
 
 header {
-    background-color: #4a4a4a; /* Darker header */
+    background-color: #333;
     color: #fff;
     padding: 1em;
     text-align: center;
-    position: relative;
 }
 
 .profile-container {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .profile-pic {
-    width: 220px; /* Increased size */
-    height: 220px; /* Increased size */
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     margin: 20px;
-    transition: transform 0.3s; /* Animation on hover */
-}
-
-.profile-pic:hover {
-    transform: scale(1.1); /* Slightly enlarge on hover */
 }
 
 .index {
     background-color: #333;
     color: #fff;
     padding: 1em;
-    text-align: left;
-    position: sticky; /* Sticky index */
+    text-align: center;
+    position: sticky;
     top: 0;
-    height: 100vh; /* Full height */
-    overflow-y: auto; /* Scrollable index */
-    width: 250px; /* Fixed width for index */
 }
 
 .index ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: space-around;
 }
 
 .index li {
-    margin-bottom: 10px; /* Spacing between items */
+    margin-right: 20px;
 }
 
 .index a {
     color: #fff;
     text-decoration: none;
-    transition: color 0.3s; /* Smooth color transition */
 }
 
 .index a:hover {
     color: #ccc;
 }
 
-main {
-    flex-grow: 1; /* Allow main content to take remaining space */
-    padding: 20px;
-}
-
 .section {
     background-color: #fff;
-    padding: 2em; /* Increased padding */
-    margin: 20px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Softer shadow */
-    border-radius: 8px; /* Rounded corners */
-    transition: transform 0.3s; /* Animation on hover */
-}
-
-.section:hover {
-    transform: translateY(-5px); /* Lift effect on hover */
+    padding: 1em;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1, h2, h3 {
@@ -92,7 +71,7 @@ h1, h2, h3 {
 }
 
 footer {
-    background-color: #4a4a4a; /* Darker footer */
+    background-color: #333;
     color: #fff;
     padding: 1em;
     text-align: center;
