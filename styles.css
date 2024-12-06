@@ -1,94 +1,123 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+/* Basic Reset */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
-    background: #0078d4;
+    background: linear-gradient(45deg, #00aaff, #1e90ff);
     color: #fff;
     padding: 20px 0;
     text-align: center;
+    border-bottom: 4px solid #005f99;
+}
+
+.profile-container {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-pic {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: 5px solid white;
 }
 
 h1 {
     margin: 0;
+    font-size: 2.5rem;
+    color: #fff;
 }
 
-h2 {
-    color: #0078d4;
+p {
+    margin-top: 10px;
+    font-size: 1.1rem;
 }
 
-section {
-    margin: 20px;
-    padding: 20px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-/* Floating Navigation */
-.floating-index {
+a:hover {
+    color: #ffdd57;
+}
+
+/* Floating Index Styling */
+.index {
     position: fixed;
     top: 20px;
     left: 20px;
-    background-color: #0078d4;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.75);
+    padding: 20px;
+    border-radius: 10px;
+    width: 180px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-.floating-index ul {
+.index ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
 }
 
-.floating-index ul li {
-    margin-bottom: 10px;
+.index li {
+    margin: 12px 0;
 }
 
-.floating-index ul li a {
-    color: white;
+.index a {
+    color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
-.floating-index ul li a:hover {
-    color: #ffc107;
-    text-decoration: underline;
-}
-
-/* Profile Image */
-.profile-image {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    border-radius: 50%;
-    overflow: hidden;
-    width: 100px;
-    height: 100px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-}
-
-.profile-image img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 50%;
-    transition: transform 0.3s ease;
-}
-
-.profile-image img:hover {
-    transform: scale(1.1);
+.index a:hover {
+    color: #ffdd57;
 }
 
 /* Section Styling */
+.section {
+    margin: 120px 20px 20px 200px;
+    padding: 40px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+h2 {
+    color: #1e90ff;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
 .edu-item, .exp-item, .proj-item {
-    margin-bottom: 15px;
+    background: #f0faff;
+    border-left: 5px solid #1e90ff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.edu-item:hover, .exp-item:hover, .proj-item:hover {
+    transform: translateY(-8px);
 }
 
 ul {
@@ -96,43 +125,36 @@ ul {
     margin-left: 20px;
 }
 
+/* Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Highlighting Current Section */
+.section:target {
+    background: #e6f7ff;
+    border-left: 8px solid #00aaff;
+}
+
+/* Footer Styling */
 footer {
     text-align: center;
-    padding: 10px 0;
-    background: #0078d4;
+    padding: 20px 0;
+    background: #00aaff;
+    color: white;
+    font-size: 1rem;
+    border-top: 4px solid #005f99;
 }
 
-/* Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+footer p {
+    margin: 0;
 }
 
-section {
-    animation: fadeIn 2s ease-in-out;
-}
-
-/* Responsive Styling */
-@media screen and (max-width: 768px) {
-    .floating-index {
-        top: auto;
-        bottom: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .profile-image {
-        width: 80px;
-        height: 80px;
-    }
-
-    section {
-        margin: 10px;
-        padding: 15px;
-    }
-}
 
