@@ -2,11 +2,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #eaeaea; /* Light background for better contrast */
 }
 
 header {
-    background-color: #333;
+    background-color: #4a4a4a; /* Darker header */
     color: #fff;
     padding: 1em;
     text-align: center;
@@ -15,12 +15,12 @@ header {
 .profile-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end; /* Align profile pic to the right */
 }
 
 .profile-pic {
-    width: 150px;
-    height: 150px;
+    width: 200px; /* Increased size */
+    height: 200px; /* Increased size */
     border-radius: 50%;
     margin: 20px;
 }
@@ -29,26 +29,27 @@ header {
     background-color: #333;
     color: #fff;
     padding: 1em;
-    text-align: center;
-    position: sticky;
+    text-align: left;
+    position: sticky; /* Sticky index */
     top: 0;
+    height: 100vh; /* Full height */
+    overflow-y: auto; /* Scrollable index */
 }
 
 .index ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: space-around;
 }
 
 .index li {
-    margin-right: 20px;
+    margin-bottom: 10px; /* Spacing between items */
 }
 
 .index a {
     color: #fff;
     text-decoration: none;
+    transition: color 0.3s; /* Smooth color transition */
 }
 
 .index a:hover {
@@ -57,9 +58,10 @@ header {
 
 .section {
     background-color: #fff;
-    padding: 1em;
-    margin-bottom: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 2em; /* Increased padding */
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Softer shadow */
+    border-radius: 8px; /* Rounded corners */
 }
 
 h1, h2, h3 {
@@ -71,7 +73,7 @@ h1, h2, h3 {
 }
 
 footer {
-    background-color: #333;
+    background-color: #4a4a4a; /* Darker footer */
     color: #fff;
     padding: 1em;
     text-align: center;
