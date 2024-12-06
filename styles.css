@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -29,6 +30,63 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Floating Navigation */
+.floating-index {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #0078d4;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.floating-index ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.floating-index ul li {
+    margin-bottom: 10px;
+}
+
+.floating-index ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.floating-index ul li a:hover {
+    color: #ffc107;
+    text-decoration: underline;
+}
+
+/* Profile Image */
+.profile-image {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.profile-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.profile-image img:hover {
+    transform: scale(1.1);
+}
+
+/* Section Styling */
 .edu-item, .exp-item, .proj-item {
     margin-bottom: 15px;
 }
@@ -43,3 +101,38 @@ footer {
     padding: 10px 0;
     background: #0078d4;
 }
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+section {
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+    .floating-index {
+        top: auto;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .profile-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+}
+
