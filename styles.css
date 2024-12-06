@@ -1,105 +1,108 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Light background for better contrast */
+    background-color: #f4f4f4;
     display: flex;
-}
-
-header {
-    background-color: #4a4a4a; /* Darker header */
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  header {
+    background-color: #4a4a4a;
     color: #fff;
     padding: 1em;
     text-align: center;
     position: relative;
     display: flex;
-    justify-content: space-between; /* Space between title and profile image */
-    align-items: center; /* Center items vertically */
-}
-
-.profile-container {
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .profile-container {
     text-align: center;
-}
-
-.profile-pic {
-    width: 150px; /* Adjusted size */
-    height: 150px; /* Adjusted size */
+  }
+  
+  .profile-pic {
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     margin: 20px;
-    transition: transform 0.3s; /* Animation on hover */
-}
-
-.profile-pic:hover {
-    transform: scale(1.1); /* Slightly enlarge on hover */
-}
-
-.index {
+    transition: transform 0.3s;
+  }
+  
+  .profile-pic:hover {
+    transform: scale(1.1);
+  }
+  
+  .index {
     background-color: #333;
     color: #fff;
     padding: 1em;
     text-align: left;
-    position: fixed; /* Fixed index */
+    position: fixed;
     top: 0;
     left: 0;
-    height: 100vh; /* Full height */
-    overflow-y: auto; /* Scrollable index */
-    width: 250px; /* Fixed width for index */
-}
-
-.index ul {
+    height: 100vh;
+    overflow-y: auto;
+    width: 250px;
+  }
+  
+  .index ul {
     list-style: none;
     margin: 0;
     padding: 0;
-}
-
-.index li {
-    margin-bottom: 10px; /* Spacing between items */
-}
-
-.index a {
+  }
+  
+  .index li {
+    margin-bottom: 10px;
+  }
+  
+  .index a {
     color: #fff;
     text-decoration: none;
-    transition: color 0.3s; /* Smooth color transition */
-}
-
-.index a:hover {
+    transition: color 0.3s;
+  }
+  
+  .index a:hover {
     color: #ccc;
-}
-
-main {
-    margin-left: 270px; /* Space for the fixed index */
+  }
+  
+  main {
+    margin-left: 270px;
     padding: 20px;
-}
-
-.section {
+  }
+  
+  .section {
     background-color: #fff;
-    padding: 2em; /* Increased padding */
-    margin: 20px 0; /* Margin for spacing between sections */
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Softer shadow */
-    border-radius: 8px; /* Rounded corners */
-    transition: transform 0.3s; /* Animation on hover */
-}
-
-.section:hover {
-    transform: translateY(-5px); /* Lift effect on hover */
-}
-
-h1, h2, h3 {
+    padding: 2em;
+    margin: 20px 0;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    transition: transform 0.3s;
+  }
+  
+  .section:hover {
+    transform: translateY(-5px);
+  }
+  
+  h1, h2, h3 {
     color: #333;
-}
-
-.edu-item, .exp-item, .proj-item {
+  }
+  
+  .edu-item, .exp-item, .proj-item {
     margin-bottom: 20px;
-}
-
-footer {
-    background-color: #4a4a4a; /* Darker footer */
+  }
+  
+  footer {
+    background-color: #4a4a4a;
     color: #fff;
     padding: 1em;
     text-align: center;
     clear: both;
-}
-
-footer p {
+  }
+  
+  footer p {
     margin: 0;
-}
+  }
