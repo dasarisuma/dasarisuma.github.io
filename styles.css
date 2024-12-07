@@ -7,98 +7,83 @@
   
   body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(120deg, #d4fc79, #96e6a1);
+    background: linear-gradient(120deg, #ffecd2, #fcb69f);
     color: #333;
-    overflow-x: hidden;
   }
   
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background: #4a4a4a;
-    color: #fff;
-    position: relative;
-  }
-  
-  .intro {
-    max-width: 60%;
-  }
-  
-  .intro h1 {
-    font-size: 2rem; /* Reduced size */
-    border-bottom: 2px solid #ffdd57; /* Reduced border */
-    padding-bottom: 5px;
-  }
-  
-  .profile-pic {
-    width: 200px; /* Increased size */
-    height: 200px;
-    border-radius: 50%;
-    transition: transform 0.3s;
-  }
-  
-  .profile-pic:hover {
-    transform: scale(1.1);
-  }
-  
-  .nav-bar {
-    background: #333;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    position: sticky;
+  .index {
+    position: fixed;
     top: 0;
-    z-index: 10;
-  }
-  
-  .nav-bar ul {
-    display: flex;
-    list-style: none;
-  }
-  
-  .nav-bar li {
-    margin: 0 15px;
-  }
-  
-  .nav-bar a {
+    left: 0;
+    background-color: #222;
     color: #fff;
+    width: 200px; /* Reduced width */
+    height: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .index .profile-container img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .index ul {
+    list-style: none;
+    margin-top: 20px;
+  }
+  
+  .index li {
+    margin: 15px 0;
+  }
+  
+  .index a {
+    color: #fff;
+    font-size: 1.2rem; /* Increased font size */
     text-decoration: none;
-    font-size: 1.1rem;
     transition: color 0.3s;
   }
   
-  .nav-bar a:hover {
-    color: #ffdd57;
+  .index a:hover {
+    color: #fcb69f;
   }
   
   main {
+    margin-left: 220px; /* Adjusted for index width */
     padding: 20px;
+  }
+  
+  .welcome {
+    text-align: center;
+  }
+  
+  .welcome h1 {
+    font-size: 1.8rem; /* Reduced size */
+    margin-bottom: 10px;
   }
   
   .section {
-    margin: 50px 0;
+    margin: 40px 0;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     opacity: 0;
     transform: translateY(50px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    transition: opacity 0.6s, transform 0.6s;
   }
   
   .section h2 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-    color: #4a4a4a;
+    font-size: 1.6rem;
+    color: #444;
   }
   
   footer {
     text-align: center;
     padding: 10px;
-    background: #4a4a4a;
+    background: #222;
     color: #fff;
   }
   

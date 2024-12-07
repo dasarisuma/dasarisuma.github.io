@@ -1,8 +1,7 @@
-// Smooth scrolling and animation reveal
 document.addEventListener('DOMContentLoaded', function () {
-  // Smooth scrolling for navigation
-  document.querySelectorAll('.nav-bar a').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
+  // Smooth scrolling
+  document.querySelectorAll('.index a').forEach(link => {
+    link.addEventListener('click', function (e) {
       e.preventDefault();
       document.querySelector(this.getAttribute('href')).scrollIntoView({
         behavior: 'smooth'
@@ -10,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // Scroll animation for sections
+  // Reveal sections on scroll
   const sections = document.querySelectorAll('.section');
   const revealSection = function () {
     sections.forEach(section => {
