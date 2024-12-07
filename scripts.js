@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
   // Smooth scrolling
-  document.querySelectorAll('.index a').forEach(link => {
+  document.querySelectorAll('.horizontal-nav a').forEach(link => {
     link.addEventListener('click', function (e) {
       e.preventDefault();
       document.querySelector(this.getAttribute('href')).scrollIntoView({
