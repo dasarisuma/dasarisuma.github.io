@@ -25,25 +25,46 @@ header {
   border-radius: 50%;
 }
 
-.intro {
+.greeting {
   max-width: 600px;
 }
 
-.intro .name {
+.greeting h1 {
   font-size: 36px;
 }
 
-.intro .location, .contact {
-  margin: 5px 0;
-}
-
-.intro .social a {
+.greeting .social a {
   color: #3498db;
   text-decoration: none;
   margin-top: 10px;
 }
 
-.intro .social a:hover {
+.greeting .social a:hover {
+  text-decoration: underline;
+}
+
+nav.index {
+  background-color: #2c3e50;
+  padding: 10px;
+  text-align: center;
+}
+
+nav.index ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav.index ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav.index ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav.index ul li a:hover {
   text-decoration: underline;
 }
 
@@ -51,6 +72,8 @@ section {
   padding: 40px 20px;
   max-width: 1000px;
   margin: 50px auto;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
@@ -68,20 +91,9 @@ ul {
   padding-left: 20px;
 }
 
-.job, .project {
-  background-color: #ffffff;
+.job, .project, .education-item {
   margin-bottom: 20px;
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-}
-
-.job:hover, .project:hover {
-  transform: scale(1.05);
-}
-
-.skills p {
-  color: #34495e;
 }
 
 footer {
@@ -107,11 +119,7 @@ footer {
 }
 
 /* Sticky Sidebar */
-#education, #experience, #projects, #skills, #contact {
-  position: relative;
-}
-
-#experience, #projects, #skills, #contact {
+#experience, #projects, #skills, #education, #contact {
   position: relative;
 }
 
