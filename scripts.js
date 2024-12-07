@@ -1,27 +1,24 @@
-document.addEventListener('DOMContentLoaded', function () {
-  // Smooth scrolling
-  document.querySelectorAll('.horizontal-nav a').forEach(link => {
-    link.addEventListener('click', function (e) {
-      e.preventDefault();
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-        behavior: 'smooth'
-      });
-    });
-  });
+// Scroll Animation
+const sections = document.querySelectorAll('.section');
 
-  // Reveal sections on scroll
-  const sections = document.querySelectorAll('.section');
-  const revealSection = function () {
+const sectionInView = (section) => {
+    const rect = section.getBoundingClientRect();
+    return rect.top <= window.innerHeight && rect.bottom >= 0;
+};
+
+const handleScroll = () => {
     sections.forEach(section => {
-      const sectionTop = section.getBoundingClientRect().top;
-      const viewportHeight = window.innerHeight;
-      if (sectionTop < viewportHeight - 100) {
-        section.style.opacity = 1;
-        section.style.transform = 'translateY(0)';
-      }
+        if (sectionInView(section)) {
+            section.classList.add('in-view');
+        } else {
+            section.classList.remove('in-view');
+        }
     });
-  };
+};
 
-  window.addEventListener('scroll', revealSection);
-  revealSection();
+window.addEventListener('scroll', handleScroll);
+
+// Scroll-based motion effects
+document.addEventListener("DOMContentLoaded", () => {
+    handleScroll();  // For initial scroll position
 });
