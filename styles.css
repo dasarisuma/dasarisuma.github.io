@@ -22,17 +22,18 @@ header {
   width: 140px;
   height: 150px;
   border-radius: 50%;
-  margin-left: auto;
+  object-fit: cover; 
 }
 .gen-img {
   width: 130px;
   height: 130px;
   border-radius: 50%;
-  margin-left: auto;
 }
 
 .greeting {
-  max-width: 600px;
+  max-width: 600px;display: flex;
+  align-items: center;           /* Aligns text and image vertically */
+  justify-content: space-between;
 }
 
 .greeting h1 {
