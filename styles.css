@@ -22,11 +22,13 @@ header {
   width: 140px;
   height: 150px;
   border-radius: 50%;
+  margin-left: auto;
 }
 .gen-img {
-  width: 100px;
-  height: 100px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
+  margin-left: auto;
 }
 
 .greeting {
