@@ -16,7 +16,7 @@ header {
   z-index: 10;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.header:hover {
+.nav.index:hover {
   transform: scale(1.1);         /* Slightly enlarges the element */
   background-color: #007BFF;    /* Changes background color */
   color: #fff;                   /* Highlights text color */
