@@ -24,8 +24,8 @@ header {
   border-radius: 50%;
 }
 .gen-img {
-  width: 100px;
-  height: 100px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
 }
 
@@ -100,7 +100,7 @@ ul {
 
 .job, .project, .education-item {
   margin-bottom: 20px;
-  padding: 20px;
+  justify-content: space-between;
 }
 
 footer {
