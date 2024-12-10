@@ -90,7 +90,7 @@ nav.index ul li a:hover {
 section {
   max-width: 1000px;
   margin: 50px auto;
-  background-color: #ffff;
+  color: #ffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
