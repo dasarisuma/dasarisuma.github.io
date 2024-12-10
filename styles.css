@@ -38,7 +38,8 @@ header {
 }
 
 .greeting {
-  max-width: 600px;display: flex;
+  max-width: 600px;
+  display: flex;
   align-items: center;           /* Aligns text and image vertically */
   justify-content: space-between;
 }
@@ -112,10 +113,10 @@ ul {
   margin-bottom: 20px;
   justify-content: space-between;
 }
-.job-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; 
+.genpact-section {
+  display: flex; /* Use flexbox for horizontal alignment */
+  align-items: center; /* Vertically center the items */
+  justify-content: space-between; /* Space between text and image */
 }
 footer {
   background-color: #2c3e50;
