@@ -14,17 +14,19 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #35424a;
+  background-image: url('header.jpg'); /* Add your image URL here */
+  background-size: cover; /* Ensure the image covers the entire header */
+  background-position: center; /* Center the image */
   color: white;
-  position: sticky;
   top: 0;
   z-index: 10;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+
 .profile-img {
-  width: 120px;
-  height: 120px;
+  width: 140px;
+  height: 150px;
   border-radius: 50%;
 }
 
@@ -47,9 +49,12 @@ header {
 }
 
 nav.index {
-  background-color: #2c3e50;
+  background-image: url('header.jpg'); /* Add your image URL here */
+  background-size: cover; /* Ensure the image covers the entire navigation bar */
+  background-position: center; /* Center the image */
   padding: 10px;
-  text-align: center;
+  text-align: justify;
+  position: sticky;
 }
 
 nav.index ul {
@@ -75,7 +80,7 @@ section {
   padding: 40px 20px;
   max-width: 1000px;
   margin: 50px auto;
-  background-color: #DFD5C7;
+  background-color: #ffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
