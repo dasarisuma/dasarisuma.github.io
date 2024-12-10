@@ -10,13 +10,7 @@ body {
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-image: url('header.jpg'); /* Add your image URL here */
-  background-size: cover; /* Ensure the image covers the entire header */
-  background-position: center; /* Center the image */
+  background-color: #37ADDD;
   color: white;
   top: 0;
   z-index: 10;
@@ -49,12 +43,13 @@ header {
 }
 
 nav.index {
-  background-image: url('header.jpg'); /* Add your image URL here */
-  background-size: cover; /* Ensure the image covers the entire navigation bar */
-  background-position: center; /* Center the image */
+  background-color: #37ADDD;
   padding: 10px;
   text-align: justify;
   position: sticky;
+  top: 0; /* Makes the navbar stick to the top */
+  z-index: 20;
+  
 }
 
 nav.index ul {
@@ -77,7 +72,6 @@ nav.index ul li a:hover {
 }
 
 section {
-  padding: 40px 20px;
   max-width: 1000px;
   margin: 50px auto;
   background-color: #ffff;
