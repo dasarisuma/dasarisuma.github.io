@@ -41,7 +41,7 @@ header {
   max-width: 600px;
   display: flex;
   align-items: center;           /* Aligns text and image vertically */
-  justify-content: flex-start;
+  justify-content: space-between;
   gap:20px;
 }
 
