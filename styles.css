@@ -41,7 +41,8 @@ header {
   max-width: 600px;
   display: flex;
   align-items: center;           /* Aligns text and image vertically */
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap:20px;
 }
 
 .greeting h1 {
