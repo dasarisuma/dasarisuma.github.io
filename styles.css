@@ -3,6 +3,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color:lightblue;
 }
 
 header {
@@ -32,7 +33,7 @@ header {
 }
 .profile-img {
   width: 160px;
-  height: 150px;
+  height: 120px;
   border-radius: 50%;
 }
 .nitw-img {
@@ -102,10 +103,10 @@ nav.index ul li a:hover {
 
 .section {
   
-  background-color: lightblue;
+  background-color: white;
   max-width: 1000px;
   margin: 50px auto;
-  color: #ffff;
+  color: black;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
