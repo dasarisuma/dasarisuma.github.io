@@ -119,12 +119,22 @@ ul {
   margin-bottom: 20px;
   justify-content: space-between;
 }
-.genpact-section {
+.Acko-section {
   display: flex; /* Use flexbox for horizontal alignment */
   align-items: center; /* Vertically center the items */
   justify-content: space-between; /* Space between text and image */
 }
 .Microsoft-section {
+  display: flex; /* Use flexbox for horizontal alignment */
+  align-items: center; /* Vertically center the items */
+  justify-content: space-between; /* Space between text and image */
+}
+.Uconn {
+  display: flex; /* Use flexbox for horizontal alignment */
+  align-items: center; /* Vertically center the items */
+  justify-content: space-between; /* Space between text and image */
+}
+.NITW {
   display: flex; /* Use flexbox for horizontal alignment */
   align-items: center; /* Vertically center the items */
   justify-content: space-between; /* Space between text and image */
