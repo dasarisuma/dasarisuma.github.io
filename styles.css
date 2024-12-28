@@ -1,7 +1,6 @@
 /* General Styles */
 body {
   font-family: Arial, sans-serif;
-  background-color: navy;
   margin: 0;
   padding: 0;
 }
@@ -101,11 +100,18 @@ nav.index ul li a:hover {
   text-decoration: underline;
 }
 
-section {
+.section {
+  
+  background-color: lightblue;
   max-width: 1000px;
   margin: 50px auto;
   color: #ffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section:hover{
+
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
