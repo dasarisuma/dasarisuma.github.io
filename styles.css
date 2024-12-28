@@ -124,7 +124,7 @@ ul {
   align-items: center; /* Vertically center the items */
   justify-content: space-between; /* Space between text and image */
 }
-.microsoft-section {
+.Microsoft-section {
   display: flex; /* Use flexbox for horizontal alignment */
   align-items: center; /* Vertically center the items */
   justify-content: space-between; /* Space between text and image */
