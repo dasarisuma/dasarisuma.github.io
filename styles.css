@@ -14,7 +14,7 @@ header {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .nav.index:hover {
-  transform: scale(1.1);         /* Slightly enlarges the element */
+  transform: scale(2);         /* Slightly enlarges the element */
   background-color: #007BFF;    /* Changes background color */
   color: #fff;                   /* Highlights text color */
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Adds a shadow for pop-out effect */
@@ -65,6 +65,7 @@ nav.index {
   position: sticky;
   top: 0; /* Makes the navbar stick to the top */
   z-index: 20;
+  text-align: center;
   
 }
 
