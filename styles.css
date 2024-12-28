@@ -26,6 +26,11 @@ header {
   height: 90px;
   border-radius: 50%;
 }
+.mic-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
 
 .greeting {
   max-width: 600px;
@@ -115,6 +120,11 @@ ul {
   justify-content: space-between;
 }
 .genpact-section {
+  display: flex; /* Use flexbox for horizontal alignment */
+  align-items: center; /* Vertically center the items */
+  justify-content: space-between; /* Space between text and image */
+}
+.microsoft-section {
   display: flex; /* Use flexbox for horizontal alignment */
   align-items: center; /* Vertically center the items */
   justify-content: space-between; /* Space between text and image */
