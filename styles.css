@@ -217,7 +217,7 @@ footer {
     color: #333;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
+    max-width: 800px;
     margin: 20px auto;
   }
   
@@ -229,13 +229,13 @@ footer {
   
   .contact-items {
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    gap: 15px;
+    gap: 20px; /* Spacing between items */
   }
   
   .contact-item {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   
   .contact-link {
@@ -243,7 +243,7 @@ footer {
     color: #333;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 10px; /* Space between icon and text */
     padding: 10px 15px;
     border: 2px solid #37ADDD;
     border-radius: 5px;
@@ -251,7 +251,7 @@ footer {
   }
   
   .contact-link i {
-    font-size: 1.5rem;
+    font-size: 2rem; /* Increased icon size */
     color: #37ADDD;
   }
   
@@ -264,5 +264,6 @@ footer {
   .contact-link i:hover {
     color: #fff;
   }
+  
   
 }
