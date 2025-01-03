@@ -15,7 +15,7 @@ header {
 }
 .nav.index:hover {
   transform: scale(2);         /* Slightly enlarges the element */
-  background-color: #007BFF;    /* Changes background color */
+  background-color:  #1034a6;    /* Changes background color */
   color: #fff;                   /* Highlights text color */
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Adds a shadow for pop-out effect */
 }
@@ -77,31 +77,39 @@ header {
 nav.index {
   background-color: #37ADDD;
   padding: 10px;
-  text-align: justify;
   position: sticky;
-  top: 0; /* Makes the navbar stick to the top */
+  top: 0;
   z-index: 20;
   text-align: center;
-  
 }
 
 nav.index ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
 nav.index ul li {
-  display: inline;
-  margin: 0 15px;
+  margin: 0;
 }
 
 nav.index ul li a {
   color: white;
   text-decoration: none;
+  padding: 10px 15px;
+  border: 2px solid white;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-nav.index ul li a:hover {
-  text-decoration: underline;
+nav.index ul li a:hover,
+nav.index ul li a.active {
+  background-color: white;
+  color: #37ADDD;
 }
 
 .section {
