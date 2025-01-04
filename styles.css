@@ -228,27 +228,30 @@ footer {
   }
   
   .contact-items {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 20px; /* Spacing between items */
+    display: flex; /* Makes items horizontal */
+    justify-content: space-between; /* Spreads items evenly */
+    align-items: center; /* Aligns items vertically in the center */
+    gap: 20px; /* Adds spacing between items */
   }
   
   .contact-item {
     font-size: 1.5rem;
+    flex: 1; /* Ensures equal width for each item */
+    text-align: center; /* Centers content within each item */
   }
-  
- 
   
   .contact-link {
     display: inline-flex;
+    flex-direction: column; /* Places the icon above the text */
     align-items: center;
-    padding: 10px 15px; /* Adjust the padding to your liking */
+    justify-content: center;
+    padding: 10px;
     font-size: 1.2rem;
     text-decoration: none;
-}
+  }
+  
   .contact-link i {
-    font-size: 6rem; /* Increased icon size */
+    font-size: 3rem; /* Adjust icon size */
     color: #37ADDD;
   }
   
@@ -256,11 +259,13 @@ footer {
     background-color: #37ADDD;
     color: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
   }
   
   .contact-link i:hover {
     color: #fff;
   }
+  
   
   
 }
