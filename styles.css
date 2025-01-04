@@ -120,7 +120,7 @@ nav.index ul li a.active {
   color: black;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
-  padding: auto;
+  padding: 10px;
 }
 
 .section:hover{
@@ -144,7 +144,7 @@ ul {
 }
 
 .job, .project, .education-item {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   justify-content: space-between;
 }
 .Acko-section {
