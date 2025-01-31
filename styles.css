@@ -36,8 +36,8 @@ header {
 .profile-img {
   width: 100px;
   height: 150px;
-  border-radius: 0;
-  padding:0;
+  border-radius: 20%;
+  padding:20px;
 }
 .nitw-img {
   width: 70px;
